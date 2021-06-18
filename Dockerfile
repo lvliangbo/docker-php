@@ -64,6 +64,7 @@ RUN apt-get install -y --no-install-recommends \
         libpng-dev \
         libwebp-dev \
     && docker-php-ext-configure gd \
+        --with-freetype \
         --with-jpeg \
         --with-webp \
     && docker-php-ext-install -j$(nproc) gd
