@@ -1,8 +1,5 @@
 FROM php:7.4-fpm
 
-#tsinghua source
-COPY sources.list /etc/apt/
-
 #timezone
 RUN echo "Asia/Shanghai" > /etc/timezone
 
